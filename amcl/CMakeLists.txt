@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.1)
 project(amcl)
 
+add_compile_options(-std=c++11)
+
 include(CheckIncludeFile)
 include(CheckSymbolExists)
 

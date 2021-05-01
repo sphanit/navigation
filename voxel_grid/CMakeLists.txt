@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(voxel_grid)
 
+add_compile_options(-std=c++11)
+
 include(CheckIncludeFile)
 
 find_package(catkin REQUIRED

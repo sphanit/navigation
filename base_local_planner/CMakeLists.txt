@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(base_local_planner)
 
+add_compile_options(-std=c++11)
+
 include(CheckIncludeFile)
 
 find_package(catkin REQUIRED
