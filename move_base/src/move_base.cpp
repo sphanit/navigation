@@ -549,7 +549,7 @@ namespace move_base {
     goal_pose.header.stamp = ros::Time();
 
     try{
-      tf_.transform(goal_pose_msg, global_pose, global_frame);
+      tf_.transform(goal_pose_msg, global_pose, global_frame,ros::Duration(0.5));
     }
     catch(tf2::TransformException& ex){
       ROS_WARN("Failed to transform the goal pose from %s into the %s frame: %s",
